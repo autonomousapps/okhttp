@@ -25,6 +25,8 @@ kotlin {
     }
     val commonTest by getting {
       dependencies {
+        implementation(Dependencies.kotlinTest)
+        implementation(Dependencies.kotlinTestAnnotations)
       }
     }
 
@@ -64,6 +66,7 @@ kotlin {
         implementation(Dependencies.junit)
         implementation(Dependencies.junit5Api)
         implementation(Dependencies.junit5JupiterParams)
+        implementation(Dependencies.kotlinTestJunit)
         implementation(Dependencies.assertj)
         implementation(Dependencies.openjsse)
         implementation(Dependencies.bndResolve)
